@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<!------ Include the above in your HEAD tag ---------->
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+<style>
+    .container, #hotspot-demo{
+        width: 100%;
+        height: 900px;
+        /*background-color:red;*/
+    }
+    
+</style>
+<body>
+        <div class="container">
+                <model-viewer id="hotspot-demo" ar camera-controls touch-action="pan-y" src="final_project2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="PORTADA.png" shadow-intensity="1.27" shadow-softness="0.87" exposure="1.22">
+                   <button class="btn" slot="hotspot-5" data-surface="5 86 3 4 5 0.263 0.552 0.185" data-visibility-attribute="visible" onclick="playVid();">
+                        <span class="btn-text-one">Clic en el modelo para moverte</span>
+                    </button>         
+                </model-viewer>
+            </div>
+</body>
+</html>
